@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #000;
+    height: 5rem;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+nav>p {
+    padding-top: .7rem;
+}
+
+.choices {
+    margin-left: 40px;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+}
+
+#rock>img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#paper>img {
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#Scissor>img {
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#paper>img {
+    transform: rotate(270deg);
+}
+
+#Scissor>img {
+    transform: rotate(280deg);
+}
+
+.scorecard {
+    margin-left: 3rem;
+    display: flex;
+    margin-top: 7rem;
+    gap: 1rem;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#myscore,
+#compscore {
+    margin: 2rem;
+    text-align: center;
+}
