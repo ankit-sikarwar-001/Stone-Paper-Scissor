@@ -82,7 +82,7 @@ nav>p {
     justify-content: center;
 }
 
-#result {
+#result1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 1rem;
@@ -94,7 +94,7 @@ nav>p {
     border-radius: 3rem;
 }
 
-#result>p {
+#result {
     margin-top: .7rem;
 }
 
@@ -102,4 +102,24 @@ nav>p {
     box-shadow: 1px 1px 3px;
     border-radius: 10rem;
     padding-left: 3px;
+}
+
+#reset {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset>button {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 3rem;
+    background-color: black;
+    color: white;
+}
+
+#reset>button:active {
+    background: #454343;
 }
