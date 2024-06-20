@@ -112,6 +112,8 @@ let rsc = document.querySelectorAll(".rest");
 
 reset.addEventListener("click", () => {
   for (const res of rsc) {
+    ps = 0;
+    cs = 0;
     res.innerText = "0";
     display1.style.background = "#454343";
     display.innerText = "Pick Your Move";
