@@ -109,10 +109,6 @@ let display = document.getElementById("result");
 
 //rsc it is the different scorecard value
 
-//as they declare above
-
-//ps&cs
-
 let rsc = document.querySelectorAll(".rest");
 
 reset.addEventListener("click", () => {
