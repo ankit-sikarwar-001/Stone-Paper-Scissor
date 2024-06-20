@@ -11,26 +11,30 @@
       <p>Rock Paper Scissors</p>
     </nav>
     <div class="choices">
-      <div id="rock" class="choice">
+      <div id="rock" class="choice chng">
         <img src="images/rock.png" alt="rock" />
       </div>
-      <div id="Scissor" class="choice">
+      <div id="scissor" class="choice chng">
         <img src="images/scissor.png" alt="Scissor" />
       </div>
-      <div id="paper" class="choice">
+      <div id="paper" class="choice chng">
         <img src="images/paper.png" alt="paper" />
       </div>
     </div>
     <div class="scorecard">
         <div id="myscore">
-            <p>0</p>
-            <p><h3><b>My Score</b></h3></p>
+            <p id="score1">0</p>
+            <p><h3>You</h3></p>
         </div>
         <div id="compscore">
-            <p>0</p>
-            <p><h3><b>Computer Score</b></h3></p>
+            <p id="score">0</p>
+            <p><h3>Computer</h3></p>
         </div>
     </div>
+    <div class="holder">
+    <div id="result">
+      <p>Pick Your Move </p>
+    </div></div>
     <script src="game.js"></script>
   </body>
 </html>
