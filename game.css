@@ -86,7 +86,7 @@ nav>p {
     text-align: center;
     font-size: 2rem;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
     background: #454343;
     color: white;
     width: 18rem;
@@ -107,7 +107,7 @@ nav>p {
 #reset {
     display: flex;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 3.5rem;
     align-items: center;
     justify-content: center;
 }
