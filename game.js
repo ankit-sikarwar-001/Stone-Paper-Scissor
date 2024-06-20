@@ -96,24 +96,12 @@ let checkwinner = (choice, val) => {
 };
 
 //reset game
-
 let reset = document.getElementById("reset");
-
-//display1 is div contain para display
-
 let display1 = document.getElementById("result1");
-
-//display contain para value to change the result
-
 let display = document.getElementById("result");
-
-//rsc it is the different scorecard value
-
 let rsc = document.querySelectorAll(".rest");
 
 reset.addEventListener("click", () => {
-  //this function reset the game into its initial position
-
   for (const res of rsc) {
     res.innerText = "0";
     display1.style.background = "#454343";
