@@ -43,7 +43,9 @@ function compchoice() {
 let checkwinner = (choice, val) => {
   if (choice != "" && val != "") {
     let score = document.getElementById("score");
-
+    let select = document.querySelector("#select");
+    let win = document.querySelector("#win");
+    let lose = document.querySelector("#lose");
     let score1 = document.getElementById("score1");
 
     let display = document.getElementById("result");
@@ -52,17 +54,20 @@ let checkwinner = (choice, val) => {
     //rock decisions
     if (choice === val) {
       console.log("Draw ! Try Again");
+      select.play();
       display.innerText = "Draw ! Try Again";
       display1.style.background = "#454343";
     } else if (choice == "rock" && val == "paper") {
       console.log("computer wins");
       display.innerText = "You Lose!";
+      lose.play();
       display1.style.background = "red";
       cs += 1;
       score.innerText = cs;
     } else if (choice == "rock" && val == "scissor") {
       console.log("You wins");
       display.innerText = "You Wins!";
+      win.play();
       display1.style.background = "green";
       ps += 1;
       score1.innerText = ps;
@@ -70,24 +75,28 @@ let checkwinner = (choice, val) => {
     } else if (choice == "scissor" && val == "rock") {
       console.log("computer wins");
       display.innerText = "You lose";
+      lose.play();
       display1.style.background = "red";
       ++cs;
       score.innerText = cs;
     } else if (choice == "scissor" && val == "paper") {
       console.log("You wins");
       display.innerText = "You Wins!";
+      win.play();
       display1.style.background = "green";
       ++ps;
       score1.innerText = ps; //paper decisions
     } else if (choice == "paper" && val == "scissor") {
       console.log("computer wins");
       display.innerText = "You lose";
+      lose.play();
       display1.style.background = "red";
       ++cs;
       score.innerText = cs;
     } else if (choice == "paper" && val == "rock") {
       console.log("You wins");
       display.innerText = "You Wins!";
+      win.play();
       display1.style.background = "green";
       ++ps;
       score1.innerText = ps;
